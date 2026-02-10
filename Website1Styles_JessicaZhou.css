@@ -1,0 +1,40 @@
+  * {
+        margin: 10;
+        padding: 1;
+        box-sizing: border-box;
+       
+    }
+body{
+        margin: 10px;
+        background-image:url("./Background.jpg");
+        background-size: cover;       
+}  
+header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+h1{
+        color:black;
+
+}
+
+main {
+        display: flex;
+        gap: 1rem;
+}
+
+section {
+        flex-grow: 1;
+        border: 15px,dotted,white;
+        
+}
+
+aside {
+        max-width: 300px;
+}
+
+footer {
+        width: 100%;
+}    
