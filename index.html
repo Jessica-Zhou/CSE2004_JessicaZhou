@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <link href="Website1Styles_JessicaZhou.css" rel ="stylesheet">
     <head>
-
+        <link href="Website1Styles_JessicaZhou.css" rel ="stylesheet">
     </head>
     <body>
         <header>
@@ -10,27 +9,107 @@
               <h1>Orcinus Orca</h1>
             </span>
             <nav>
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
+                <div class="buttons"> 
+                <a href="https://whalemuseum.org/collections/adopt-an-orca" class = "btn1">Adopt an Orca?</a>
+                <a href="https://en.wikipedia.org/wiki/Orca" class = "btn2">Reference</a>
+                <a href="https://www.linkedin.com/in/jessicaxrz/" class = "btn3">Contact</a>
+                </div>
             </nav>
+                
         </header>
 
         <main>
-            <section>
-                <h2>Left Column</h2>
-                <p>Left column content...</p>
+            <section class="row">
+            <h2>My Favorite Orca</h2>
+            <div class = "favoriteOrca">
+            <ul>
+                <li>Name: Phoenix</li>
+                <li>Gender:Male</li>
+                <li>Number: J57</li>
+                <li>Group:Southern Resident</li>
+                <li>Family: J-Pod (Mother: J35 "Tahlequah", Siblings: J47 "Notch" [Died in 2018], J61)</li>
+                <li>Story:
+                    <p>Phoneix is a four-year-old little boy that loves messes with humans. Despite young, he is one of the most "famous" southern resident orca under spotlight. He particularly enjoys jumping on and off, staring at people who come to see him. However, this is not the reason of his fame.</p>
+                    <p>Prior to his birth, his mother J35 Tahlequah suffered from the lost of her first calf, J74 "Notch". She made headlines all over the world by carrying her deceased child for 17 days straight, known as"The Tour of Grief". </p>
+                    <p>Due to the overfishing of wild salmon, Southern Resident Orcas are at danger of extinction.Their reproduction is exceptionally hard, and the youth struggles to survive. As a result, the birth of "Phoneix" two years later becomes a huge signal of hope and continuity. </p>
+                </li>
+                
+            </ul>
+            <img class = "Phoneix" src = "Phoenix.jpg" alt ="Southern Resident Whale, J-Pod"></img>
+            </div>
             </section>
-
-            <aside>
-                <h2>Right Column</h2>
-                <p>Right column content...</p>
-            </aside>
+            <div>
+                <section class = "left">
+                    <h2>Introduction</h2>
+                    <p>Orcas are eminent predators with diversed diets: bony fish, sharks, rays, and marine mammals. They are highly social with strong matrilineal family heritage, through which their hunting techniques pass down from generations to generations. An Orca family is known as a "pod", and each is with their own family custom. To some extent, Orca has cultures just as human do.</p>                
+                    <p>The most studied populations are the pods in the west coast of North America. By living habits, they are classified into three habitual groups:</p>
+                    <table class = "groups">
+                            <tr>
+                                <th scope="col">Groups</th>
+                                <th scope="col">Diet</th>
+                                <th scope="col">Living Range</th>
+                        
+                            </tr>
+                            <tr>
+                                <th scope="row">Transients</th>
+                                <td>Sea Mammals</td>
+                                <td>Coastals and Offshores (except Residents' habitats)</td>
+                                
+                            </tr>
+                            <tr>
+                                <th scope="row">Residents</th>
+                                <td>Fish</td>
+                                <td>Costal from California to Russia</td>
+                                
+                            </tr>
+                            <tr>
+                                <th scope="row">Offshores</th>
+                                <td>Fish</td>
+                                <td>Uncertain (California to Alaska, Deep in the Sea!)</td>
+                            </tr>
+                    </table>
+                    
+                   
+                </section>
+                <div class = "orcaFun">
+                <aside class = "right">
+                    <h2>Fun Fact</h2>
+                    <p>Not a single orca has ever attacked a human in the wild. It is a good mammal. We should protect it.</p>
+                    <p>Do you know the name of the only orca (captured) who has human murder records?</p>
+                    <form class = "tili">
+                        <input type="text">
+                        <button class = "submit" type="submit">Submit</button>
+                    </form>
+                </aside> 
+                <aside class = "orcaImages">
+                    <h2>Challenge</h2>
+                    <h3> Who is Phoenix? (Click!)</h3>
+                    <div class= "first">
+                        <img class = "ORCA J63inf" src="J63.jpg" alt="J63 Newborn" >
+                        <h3 id="J63Inf" class = "hidden">No! I am J63, and I was born in May 2025</h3>
+                    </div>
+                    <div class= "second">
+                        <img class = "ORCA J57inf" src="J57.jpg" alt="J57 Phoenix" >
+                        <h3 id="J57Inf" class = "hidden">Nice Job! I am Phoneix!</h3>
+                    </div>
+                    <div class="third">
+                        <img class ="ORCA J60inf" src ="J60.jpg" alt="J60 Unknown">
+                        <h3 id="J60Inf" class = "hidden">No! I am J60, and I was missing (presumed dead, R.I.P.)</h3>
+                    </div>
+                    
+                    
+                    
+                </aside>
+                </div>
+            </div>
+            
         </main>
 
         <footer>
-                <p>Footer content...</p>
+                <p>Author: Jessica Xinran Zhou(ID: 487283)</p>        
+                <p>E-mail: jessica.z@wustl.edu</p>       
+                <p>Major: Business and Computer Science</p>
         </footer>
-
+        <script src="script.js"></script>
     </body>
 </html>
