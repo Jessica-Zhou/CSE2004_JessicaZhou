@@ -1,0 +1,358 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(Background.png);
+  background-size: cover;
+  display: flex;
+  margin: 0;
+  color: #947dea;
+}
+
+@media (max-width: 600px) {
+        main{
+                flex-direction: column;
+                flex-wrap:nowrap;
+        
+        }
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+header {
+  margin-top: 11rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+
+.controls {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.manual-location {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.vibes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+button {
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/*Title Section*/
+h1 {
+  color: white;
+
+
+  text-shadow: 
+    0 0 10px rgba(230, 76, 11, 0.6),
+    0 0 20px rgba(230,76,11,0.6);
+}
+h1::after {
+  content: " 🐋";
+}
+
+p{
+  color: rgba(16, 41, 232, 0.979);
+
+  
+  text-shadow: 
+    0 0 10px rgba(232, 215, 20, 0.995),
+    0 0 20px rgb(210, 247, 2);
+}
+
+#quoteSearchBtn{
+position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 14px 28px;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+
+  color: white;
+  font-weight: 600;
+
+  background: linear-gradient(135deg, #eb5e06, #d4e43f, #2bdb51);
+
+  box-shadow: 0 0 15px rgba(219, 224, 228, 0.6);
+
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+#quoteSearchBtn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 40px;
+  background: radial-gradient(circle, rgba(255,255,255,0.2), transparent 70%);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+#quoteSearchBtn:hover::after {
+  opacity: 1;
+}
+
+
+#quoteSearchBtn:hover .needle {
+  transform: rotate(180deg);
+}
+
+
+#quoteSearchBtn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 25px rgba(79, 172, 254, 1);
+}
+/*Geographic Section*/
+#locationBtn{
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 14px 28px;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+
+  color: white;
+  font-weight: 600;
+
+  background: linear-gradient(135deg, #9490da, #0857e0, #edeff0);
+
+  box-shadow: 0 0 15px rgba(79, 172, 254, 0.6);
+
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+#locationBtn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 40px;
+  background: radial-gradient(circle, rgba(255,255,255,0.2), transparent 70%);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+#locationBtn:hover::after {
+  opacity: 1;
+}
+
+
+#locationBtn:hover .needle {
+  transform: rotate(180deg);
+}
+
+
+#locationBtn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 25px rgba(79, 172, 254, 1);
+}
+
+#citySearchBtn {
+  position: relative;
+  padding: 14px 32px;
+  border-radius: 30px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  overflow: hidden;
+
+
+  background: linear-gradient(135deg, #3cb6ea, #e06ae4, #0b4cd9);
+
+  box-shadow: 0 0 15px rgba(79, 172, 254, 0.6);
+
+  transition: all 0.3s ease;
+}
+
+#citySearchBtn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 25px rgba(79, 172, 254, 1);
+}
+
+/*MBTI Section*/
+/*Test*/
+#MBTITestBtn {
+  position: relative;
+  padding: 14px 32px;
+  border-radius: 30px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  overflow: hidden;
+
+
+  background: linear-gradient(135deg, rgb(255, 209, 102), rgb(79, 172, 254), rgb(80, 200, 120),rgb(155,89,182));
+
+  box-shadow: 0 0 15px rgba(79, 172, 254, 0.6);
+
+  transition: all 0.3s ease;
+}
+
+#MBTITestBtn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.6),
+    transparent
+  );
+
+  transform: skewX(-20deg);
+}
+
+#MBTITestBtn:hover::before {
+  animation: shine 0.8s ease;
+}
+
+@keyframes shine {
+  0% {
+    left: -75%;
+  }
+  100% {
+    left: 125%;
+  }
+}
+
+#MBTITestBtn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 25px rgba(79, 172, 254, 1);
+}
+/*Search*/
+#MBTISearchBtn {
+  position: relative;
+  padding: 14px 32px;
+  border-radius: 30px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  overflow: hidden;
+
+
+  background: linear-gradient(135deg, #ea3c56, #e4d36a, #f35d30);
+
+  box-shadow: 0 0 15px rgba(79, 172, 254, 0.6);
+
+  transition: all 0.3s ease;
+}
+
+#MBTISearchBtn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.6),
+    transparent
+  );
+
+  transform: skewX(-20deg);
+}
+
+#MBTISearchBtn:hover::before {
+  animation: shine 0.8s ease;
+}
+
+@keyframes shine {
+  0% {
+    left: -75%;
+  }
+  100% {
+    left: 125%;
+  }
+}
+
+#MBTISearchBtn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 25px rgba(79, 172, 254, 1);
+}
+
+
+/*Bottom Buttons */
+.vibe-btn{
+  position: relative;
+  border-radius: 30px;
+  border: none;
+  overflow: hidden;
+  background: #1e3c72;
+  color: white;
+}
+.vibe-btn::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 200%;
+  height: 200%;
+
+  background: 
+  radial-gradient(circle at 30% 30%, rgba(79,172,254,0.6), transparent 50%),
+  radial-gradient(ellipse at 150% 80%, #4facfe 20%, transparent 70%);
+  transition: 0.5s;
+}
+
+.vibe-btn:hover::before {
+  top: -50%;
+}
+
+.vibe-btn span {
+  position: relative;
+  z-index: 2;
+}
+
+input {
+  flex: 1;
+  padding: 0.75rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.card {
+  background: white;
+  padding: 1.25rem;
+  margin-top: 1rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.status {
+  min-height: 1.5rem;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
